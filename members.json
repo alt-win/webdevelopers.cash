@@ -1,0 +1,34 @@
+
+var members = [{
+    name: "AlternativeWinter",
+    github: "https://github.com/alt-win",
+    avatar: "",
+    website:"",
+    description: "",
+    projects:"spicebutton.com"
+  },
+  {
+    name: "",
+    github: "",
+    avatar: "",
+    website:"",
+    description: "",
+    projects:""
+  },
+  {
+    name: "",
+    github: "",
+    avatar: "",
+    website:"",
+    description: "",
+    projects:""
+  },
+  {
+    name:"",
+    github:"",
+    avatar:"",
+    website:"",
+    description:"",
+    projects:""
+    },
+];

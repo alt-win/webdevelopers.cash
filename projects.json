@@ -1,0 +1,16 @@
+var projects = [{
+  projectName:"",
+  projectLogo:"",
+  projectGithub:"",
+  projectSite:"",
+  projectDescription:""
+},
+{
+  projectName:"",
+  projectLogo:"",
+  projectGithub:"",
+  projectSite:"",
+  projectDescription:""
+
+},
+  ];

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@@media all and (max-width: 700px) {
+
+}
+
+.header {
+  width: 100%;
+  height: 175px;
+  background-color: black;
+  color: #47CC59;
+  position: fixed;
+  top: 0;
+  align-content: center;
+  padding:20px;
+}
+
+.header h1{
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+}
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  margin: auto;
+  margin-top: 200px;
+  position: relative;
+  background-color: grey;
+  width: 1500px;
+  max-width: 100%;
+  height: 100%;
+}
