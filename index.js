@@ -17,8 +17,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("countDown").innerHTML = days + "d " + hours + "h " +
+    minutes + "m " + seconds + "s ";
 
   // If the count down is over, write some text
   if (distance < 0) {
@@ -26,3 +26,26 @@ var x = setInterval(function() {
     document.getElementById("countDown").innerHTML = "Meeting in Progress";
   }
 }, 1000);
+
+function loadMembers() {
+  var ulList = "";
+  for (var i = 0; i < members.length; i++) {
+    ulList = ulList.concat("<li><a href=\"" + members[i].github + "\">" + members[i].name + "</a></li>");
+  }
+  ulList.replace(" ", "/");
+  document.getElementById('memberList').innerHTML = ulList;
+}
+
+function loadProjects() {
+  var ulList = "";
+  for (var i = 0; i < projects.length; i++) {
+    ulList = ulList.concat("<li><a href=\"" + projects[i].ProjectUrl + "\">" + projects[i].projectName + "</a></li>");
+  }
+  ulList.replace(" ", "/");
+  document.getElementById('projectList').innerHTML = ulList;
+}
+
+function startJS() {
+  loadMembers();
+  loadProjects();
+}

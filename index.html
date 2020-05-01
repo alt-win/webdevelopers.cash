@@ -11,27 +11,45 @@
   </script>
 </head>
 
-<body>
+<body onload="startJS()">
 
   <div class="main">
     <div class="header">
       <h1>Bitcoin Cash Web Developers</h1>
     </div>
     <div class="body">
-      <div class="" id="Meetings">
+      <div class="section" id="Meetings">
         <h2>Meetings</h2>
         <h3>Next Meeting:</h3>
         <p>May, 2nd 2020 9:00 PST </p>
+        <!--Add https://logwork.com/countdown-timer widget in the future -->
         <p id="countDown"></p>
         <p>Link to Join:<a href="https://us02web.zoom.us/j/9018992502">https://us02web.zoom.us/j/9018992502</a> </p>
 
       </div>
-      <div class="" id="Projects">
-        <!-- Load Data from JSON file -->
+      <br>
+      <div class="section" id="Projects">
+        <!-- Load Data from separate JS file -->
+        <script type="text/javascript" src="projects.js"></script>
+
+        <h2>Projects</h2>
+        <ul id="projectList">
+
+        </ul>
       </div>
-      <div class="" id="Members">
-        <!-- Load Data from JSON file -->
+      <br>
+      <div class="section" id="Members">
+        <!-- Load Data from separate JS file -->
+        <script type="text/javascript" src="members.js"></script>
+        <h2>Members</h2>
+        <ul id="memberList">
+
+        </ul>
+
       </div>
+      <br>
+      <p><b>not all members and projects are listed yet</b>
+      </p>
     </div>
 
   </div>
