@@ -39,8 +39,8 @@ var members = [{
     projects: ""
   },
   {
-    name: "",
-    github: "",
+    name: "Sterling Beason",
+    github: "https://github.com/sterlingbeason",
     avatar: "",
     website: "",
     description: "",
