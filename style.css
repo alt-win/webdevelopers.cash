@@ -82,3 +82,9 @@
 .cardImage {
   height: 180px;
 }
+
+.cardProject {
+  margin-top: 5px;
+  color: #666;
+  font-weight: lighter;
+}

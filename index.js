@@ -2,8 +2,7 @@
 var countDownDate = new Date("May 2, 2020 09:00:00 PST").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
+var x = setInterval(function () {
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -17,8 +16,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("countDown").innerHTML = days + "d " + hours + "h " +
-    minutes + "m " + seconds + "s ";
+  document.getElementById("countDown").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is over, write some text
   if (distance < 0) {
@@ -28,21 +27,41 @@ var x = setInterval(function() {
 }, 1000);
 
 function loadMembers() {
-  var ulList = "";
-  for (var i = 0; i < members.length; i++) {
-    ulList = ulList.concat("<li><a href=\"" + members[i].github + "\">" + members[i].name + "</a></li>");
-  }
-  ulList.replace(" ", "/");
-  document.getElementById('memberList').innerHTML = ulList;
+  // var ulList = "";
+  // for (var i = 0; i < members.length; i++) {
+  //   ulList = ulList.concat("<li><a href=\"" + members[i].github + "\">" + members[i].name + "</a></li>");
+  // }
+  // ulList.replace(" ", "/");
+  console.log(members);
+  const ulList = members
+    .map(
+      (member) =>
+        `
+        <li class="memberCard">
+          <img class="cardImage" src="${member.avatar}" alt="member">
+          <a href="${member.github}" class="cardTitle">${member.name}</a>
+          <p class="cardDescription">${member.description}<p>
+          <p class="cardProject">${member.project}<p>
+        </li>
+    `
+    )
+    .join("");
+  document.getElementById("memberList").innerHTML = ulList;
 }
 
 function loadProjects() {
   var ulList = "";
   for (var i = 0; i < projects.length; i++) {
-    ulList = ulList.concat("<li><a href=\"" + projects[i].projectUrl + "\">" + projects[i].projectName + "</a></li>");
+    ulList = ulList.concat(
+      '<li><a href="' +
+        projects[i].projectUrl +
+        '">' +
+        projects[i].projectName +
+        "</a></li>"
+    );
   }
   ulList.replace(" ", "/");
-  document.getElementById('projectList').innerHTML = ulList;
+  document.getElementById("projectList").innerHTML = ulList;
 }
 
 function startJS() {

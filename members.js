@@ -1,10 +1,11 @@
-var members = [{
+var members = [
+  {
     name: "AlternativeWinter",
     github: "https://github.com/alt-win",
     avatar: "",
     website: "",
     description: "",
-    projects: "spicebutton.com"
+    projects: "spicebutton.com",
   },
   {
     name: "Chris Troutner",
@@ -12,7 +13,7 @@ var members = [{
     avatar: "",
     website: "",
     description: "",
-    projects: "fullstack.cash"
+    projects: "fullstack.cash",
   },
   {
     name: "Dreamtrove",
@@ -20,7 +21,7 @@ var members = [{
     avatar: "",
     website: "",
     description: "",
-    projects: ""
+    projects: "",
   },
   {
     name: "JettScythe",
@@ -28,7 +29,7 @@ var members = [{
     avatar: "",
     website: "",
     description: "",
-    projects: ""
+    projects: "",
   },
   {
     name: "Kieran Mesqita",
@@ -36,7 +37,7 @@ var members = [{
     avatar: "",
     website: "",
     description: "",
-    projects: ""
+    projects: "",
   },
   {
     name: "Sterling Beason",
@@ -44,22 +45,6 @@ var members = [{
     avatar: "",
     website: "",
     description: "",
-    projects: ""
+    projects: "",
   },
-  {
-    name: "",
-    github: "",
-    avatar: "",
-    website: "",
-    description: "",
-    projects: ""
-  },
-  {
-    name: "",
-    github: "",
-    avatar: "",
-    website: "",
-    description: "",
-    projects: ""
-  }
 ];
