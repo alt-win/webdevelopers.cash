@@ -3,7 +3,7 @@ var projects = [{
   projectCreators:{},
   projectLogo:"",
   projectGithub:"",
-  projectURL:"https://fullstack.cash",
+  projectUrl:"https://fullstack.cash",
   projectDescription:"",
   projectStatus:""
 },

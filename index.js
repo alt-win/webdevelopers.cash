@@ -39,7 +39,7 @@ function loadMembers() {
 function loadProjects() {
   var ulList = "";
   for (var i = 0; i < projects.length; i++) {
-    ulList = ulList.concat("<li><a href=\"" + projects[i].ProjectUrl + "\">" + projects[i].projectName + "</a></li>");
+    ulList = ulList.concat("<li><a href=\"" + projects[i].projectUrl + "\">" + projects[i].projectName + "</a></li>");
   }
   ulList.replace(" ", "/");
   document.getElementById('projectList').innerHTML = ulList;
