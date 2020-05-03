@@ -47,4 +47,20 @@ var members = [
     description: "",
     projects: "",
   },
+  {
+    name: "Tigran",
+    github: "https://github.com/hyetigran",
+    avatar: "",
+    website: "",
+    description: "",
+    projects: "",
+  },
+  {
+    name: "",
+    github: "",
+    avatar: "",
+    website: "",
+    description: "",
+    projects: "",
+  },
 ];
