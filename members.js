@@ -25,7 +25,7 @@ var members = [
   },
   {
     name: "JettScythe",
-    github: "https://github.com/JettScythe/",
+    github: "https://github.com/JettScythe",
     avatar: "",
     website: "",
     description: "",

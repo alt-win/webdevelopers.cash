@@ -26,25 +26,28 @@ var x = setInterval(function () {
   }
 }, 1000);
 
+const fetchAvatar = async (github, i) => {
+  const githubUsername = github.substring(github.lastIndexOf("/") + 1);
+  const url = `https://api.github.com/users/${githubUsername}`;
+  const user = await fetch(url).then((res) => res.json());
+  return (members[i].avatar = user.avatar_url);
+};
+
 function loadMembers() {
-  // var ulList = "";
-  // for (var i = 0; i < members.length; i++) {
-  //   ulList = ulList.concat("<li><a href=\"" + members[i].github + "\">" + members[i].name + "</a></li>");
-  // }
-  // ulList.replace(" ", "/");
-  console.log(members);
   const ulList = members
-    .map(
-      (member) =>
-        `
+    .map((member, i) => {
+      if (!member.avatar) {
+        fetchAvatar(member.github, i);
+      }
+      return `
         <li class="memberCard">
           <img class="cardImage" src="${member.avatar}" alt="member">
           <a href="${member.github}" class="cardTitle">${member.name}</a>
           <p class="cardDescription">${member.description}<p>
-          <p class="cardProject">${member.project}<p>
+            <p class="cardProject">Projects: ${member.projects}<p>
         </li>
-    `
-    )
+    `;
+    })
     .join("");
   document.getElementById("memberList").innerHTML = ulList;
 }
