@@ -71,4 +71,12 @@ var members = [
     description: "",
     projects: "",
   },*/
+  {
+    name: "Add your profile",
+    github: "https://github.com/alt-win/webdevelopers.cash/blob/master/members.js",
+    avatar: "https://image.flaticon.com/icons/svg/32/32339.svg",
+    website: "",
+    description: "",
+    projects: "",
+  },
 ];
